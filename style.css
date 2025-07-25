@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  form {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #0077cc;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background 0.2s ease;
+  }
+  
+  button:hover {
+    background: #005fa3;
+  }
+  
+  #task-list {
+    list-style: none;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  .task button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: transform 0.2s;
+  }
+  .button-group {
+    display: flex;
+    gap: 5px;
+  }
+  .task button:hover {
+    transform: scale(1.2);
+  }
+  .task button {
+    margin-left: 5px;
+  }
+  
+  .task.completed span {
+    text-decoration: line-through ;
+    color: #06ac0e;
+  }
+  
+  .task button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .task-text {
+    flex: 1;
+    word-break: break-word;
+  }
+  .task.completed .task-text {
+    text-decoration: line-through;
+    color: #06ac0e;
+  }
+  .task-counter {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #444;
+  }
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-btn {
+    background: #e0e0e0;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.2s;
+  }
+  
+  .filter-btn:hover {
+    background: #ccc;
+  }
+  
+  .filter-btn.active {
+    background: #0077cc;
+    color: #fff;
+  }
+  

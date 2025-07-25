@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📋 Моите задачи</h1>
+
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Напиши задача..." required>
+      <button type="submit">Добави</button>
+    </form>
+
+    <div id="filters" class="filters">
+        <button data-filter="all" class="filter-btn active">Всички</button>
+        <button data-filter="completed" class="filter-btn">Завършени</button>
+        <button data-filter="active" class="filter-btn">Незавършени</button>
+      </div>
+      
+    <ul id="task-list">
+        <div id="task-counter" class="task-counter">Задачи: 0 | Оставащи: 0</div>
+      <!-- Задачите ще се появяват тук -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
